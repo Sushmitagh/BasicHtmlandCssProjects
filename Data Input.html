@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction:column;
+            padding-top:150px;
+        }
+ back
+    </style>
+</head>
+<body>
+
+        <div class="container">
+        
+            
+            <label>Name of the laptop:</label>
+            <input type="text"  id="text02" onchange="myEvent()" >
+    
+            
+
+        <label>Select the color</label>
+        <select id="list01" onchange="myEvent()">
+            <option>  Blue</option>
+            <option>  White</option>
+            <option>  Black</option>
+            <option>  Grey</option>
+        </select>
+        <p id="myP"></p>
+        <script>
+            function myEvent()
+            {
+                var v= document.getElementById("text02").value;
+            
+              document.getElementById("myP").innerHTML="My laptop model is "+v;
+
+               // var w= document.getElementById("list01").value;
+                alert("The colour is "+document.getElementById("list01").value);
+               // document.getElementById("myP").innerHTML="The color choosen is "+v;
+            }
+        </script>
+    </div>
+    
+</body>
+</html>
